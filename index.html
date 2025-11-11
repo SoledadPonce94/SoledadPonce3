@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="styles/styles.css" media="screen">
+</head>
+<body>
+   <header>
+    <nav>
+    <button  type="button" class="miboton1"> <a href="acercade.html">Mi información personal</a></button>
+   <button type="button" class="miboton2"><a href="contacto.html">Formulario de contacto</a></button> 
+    </nav>
+   </header>
+
+   <main>
+        <div class="header-top">
+            <h1> ¡Bienvenido/a a mi página personal!</h1>
+            <figure> <img src="Imagenes/CURZAS.png" alt="Logo CURZA" class="index-img"> </figure>
+        </div>
+        <h2> Mi nombre es Evelin Soledad Ponce  </h2>
+    <h3> Para conocerme un poco más haz clic en "Mi información personal"</h3>
+    <h4> <a id="curza_web" href="https://web.curza.uncoma.edu.ar/"> Página Oficial CURZA </a></h4>
+   </main>
+     <footer> © 2025 Evelin Soledad Ponce <br> Nodo CURZA - Libertad y Mitre <br> (Gral.Conesa, Río Negro) </footer>
+
+    
+    <a href="#" id="back-to-top" aria-label="Volver arriba"></a>
+
+    <script>
+        (function(){
+            var btn = document.getElementById('back-to-top');
+            if(!btn) return;
+            // mostrar/ocultar según scroll
+            window.addEventListener('scroll', function(){
+                if(window.scrollY > 200) btn.classList.add('visible'); else btn.classList.remove('visible');
+            });
+            // scroll suave al tope
+            btn.addEventListener('click', function(e){
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>
